@@ -1,0 +1,46 @@
+body {
+  padding-top: 70px;
+  font-size: 16px;
+}
+
+pre {
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+footer {
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  padding: 15px 0 25px;
+  background: linear-gradient(#eee, #fff);
+}
+
+.source {
+  width: 100%;
+  height: 200px;
+  line-height: 180%;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+.error {
+  color: red;
+}
+
+.mus-score {
+  border: dotted 1px gray;
+}
+
+.bbox {
+  fill: none;
+  stroke: #e59;
+  stroke-width: 0.3;
+  stroke-dasharray: 5 2;
+}
+
+.ref-line {
+  stroke: #ddd;
+  stroke-width: 0.5;
+  stroke-dasharray: 3 2;
+}

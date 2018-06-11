@@ -1,0 +1,20 @@
+{
+  "opts": {
+    "encoding": "utf8",
+    "destination": "./doc/",
+    "recurse": true
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "markdown": {
+    "idInHeadings": true
+  },
+  "templates": {
+    "default": {
+      "layoutFile": "./node_modules/jsdoc/templates/default/tmpl/layout.tmpl",
+      "includeDate": false,
+      "useLongnameInNav": true
+    }
+  }
+}

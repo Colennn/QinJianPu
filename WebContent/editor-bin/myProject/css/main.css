@@ -1,0 +1,106 @@
+body {
+	padding-top: 70px;
+	font-size: 16px;
+	// background-color: #FBFDFF;
+}
+
+// pre {
+// 	white-space: pre-wrap;
+// 	/* css-3 */
+// 	white-space: -moz-pre-wrap;
+// 	/* Mozilla, since 1999 */
+// 	white-space: -pre-wrap;
+// 	/* Opera 4-6 */
+// 	white-space: -o-pre-wrap;
+// 	/* Opera 7 */
+// 	word-wrap: break-word;
+// 	/* Internet Explorer 5.5+ */
+// }
+
+footer {
+	margin: 10px 10px;
+	// background: linear-gradient(#eee, #fff);
+}
+
+.source {
+	width: 100%;
+	height: 200px;
+	line-height: 180%;
+	font-family: "Lucida Console", Monaco, monospace;
+}
+
+.error {
+	color: red;
+}
+
+.mus-score {
+	/*border: dotted 1px gray;*/
+}
+
+.bbox {
+	fill: none;
+	stroke: #e59;
+	stroke-width: 0.3;
+	stroke-dasharray: 5 2;
+}
+
+.ref-line {
+	stroke: #ddd;
+	stroke-width: 0.5;
+	stroke-dasharray: 3 2;
+}
+
+.navborder {
+	border-bottom: 5px solid #333333;
+}
+
+.intop {
+	position: fixed;
+	top: 0;
+}
+
+.bg-nav {
+    background-color: #428bca;
+	// background-color: rgba(0, 150, 136, 0.78);
+}
+
+.bg-nav-light {
+	background-color: rgba(91, 150, 203, 0.7);
+}
+
+.text-withe a {
+	color: #FFFFFF !important;
+}
+
+.logo {
+	width: 50px;
+}
+
+.toolbar {
+	width: 100%;
+	padding: 10px;
+	float: left;
+	position: fixed;
+}
+
+.toolbar span {
+	margin: 0px 0px 0px 12px;
+	color: #FFFFFF;
+}
+
+#score {
+	width: 60%;
+	margin: 0 20px;
+	background-color: #FFFFFF;
+	box-shadow: 0 -1px #e7e8ec, 0 0px 0 0 rgba(0, 0, 0, .01), 0 0 12px 0 rgba(0, 0, 0, .08), 0 0 38px 0 rgba(0, 0, 0, .11);
+}
+
+.li-nostyle li {
+	list-style: none;
+}
+
+.editor {
+	width: 34%;
+	margin: 0px 10px 0px 25px;
+	box-shadow: 0 -1px #e7e8ec, 0 0px 0 0 rgba(0, 0, 0, .01), 0 0 12px 0 rgba(0, 0, 0, .08), 0 0 38px 0 rgba(0, 0, 0, .11);
+}

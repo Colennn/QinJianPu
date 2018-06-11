@@ -1,0 +1,14 @@
+.DS_Store
+.gitattributes
+.gitignore
+.jshintrc
+.travis.yml
+.tmp/
+node_modules/
+/demo/
+/doc/
+/ignore/
+/src/
+/gulpfile.js
+/jsdoc.config.json
+/webpack.config.js

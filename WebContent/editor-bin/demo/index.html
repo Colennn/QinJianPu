@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html ng-app="musjeDemo">
+<head>
+  <meta charset="UTF-8">
+  <title>Musje</title>
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/codemirror/codemirror.css">
+  <link rel="stylesheet" href="../lib/addon/codemirror/musje-codemirror.css">
+  <link rel="stylesheet" href="../lib/musje.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body ng-controller="MusjeDemoCtrl">
+
+<!-- ============================= navbar ============================ -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <span><img alt="Brand" src="../src/images/musje-logo.svg" height="30">
+        Musje</span>
+      </a>
+      <form class="navbar-form navbar-left">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default" aria-label="Play"
+                  ng-disabled="playDisabled"
+                  ng-click="play()">
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Pause"
+                  ng-disabled="pauseDisabled">
+            <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+          </button>
+          <button type="button" class="btn btn-default" aria-label="Stop"
+                  ng-disabled="stopDisabled"
+                  ng-click="stop()">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+          </button>
+        </div>
+        <div class="form-group">
+          <label for="font-select">Song:</label>
+          <select id="font-select" class="form-control"
+                  ng-options="song for song in songList"
+                  ng-model="selectedSong"
+                  ng-change="loadSong()"></select>
+        </div>
+        <div class="form-group">
+          <label for="font-select">Font:</label>
+          <select id="font-select" class="form-control"
+                  ng-options="font.name group by font.type for font in fonts"
+                  ng-model="selectedFont" ng-model-options="{ debounce: 500 }"
+                  ng-change="run()"
+                  style="width:150px"></select>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================ content =============================-->
+<div class="container-fluid">
+	<div resize style="width: 50%;">
+    <svg class="mus-score"></svg>
+  </div>
+  <textarea
+    ui-codemirror="cmOption"
+    ng-model="src" ng-model-options="{ debounce: 500 }"
+    ng-change="run()"></textarea>
+
+  <pre class="error" ng-show="error">{{error}}</pre>
+  <p>Total measures: {{totalMeasures}},
+    parse time: {{parseTime}} ms,
+    render time: {{renderTime}} ms
+  </p>
+  
+  <pre ng-show="schema">{{schema}}</pre>
+  <pre ng-show="converted">{{converted}}</pre>
+  <pre ng-show="result">{{result}}</pre>
+</div>
+
+<!-- ============================= footer ============================= -->
+<footer class="container-fluid" demo-footer></footer>
+
+<!-- ============================ scripts ============================= -->
+<script src="lib/codemirror/codemirror.js"></script>
+<script src="lib/codemirror/simple.js"></script>
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular/ui-codemirror.js"></script>
+<script src="lib/snap.svg-min.js"></script>
+<script src="lib/MIDI.min.js"></script>
+<script src="../lib/addon/codemirror/musje-codemirror.js"></script>
+<script src="../lib/musje.js"></script>
+<script src="main.js"></script>
+<script>
+	
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-36429024-8', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

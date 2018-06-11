@@ -1,0 +1,111 @@
+.CodeMirror {
+  height: 450px;/*680*/
+  line-height: 200%;
+  border-bottom: 1px solid #999999;
+}
+
+.cm-s-musje .cm-head {
+  color: #4271AE;/*蓝色*/
+  font-weight: bold;
+  font-size: larger;
+}
+.cm-s-musje .cm-part-head {
+  color: #4271AE;/*蓝色*/
+  font-weight: bold;
+  font-style: italic;
+}
+
+.cm-s-musje .cm-time {
+  color: #4271AE;/*蓝色*/
+  font-weight: bold;
+  font-size: larger;
+}
+
+.cm-s-musje .cm-note {
+  color: #666666;
+  font-weight: bold;
+  font-size: larger;
+}
+.cm-s-musje .cm-accidental {
+  position: relative;
+  top: -0.5em;
+  font-size: 0.8em;
+}
+.cm-s-musje .cm-octave-up {
+  position: relative;
+  top: -0.5em;
+  left: -0.2em;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.cm-s-musje .cm-octave-down {
+  position: relative;
+  top: 0.5em;
+  left: -0.2em;
+  font-size: 0.8em;
+}
+.cm-s-musje .cm-dur-equal {
+  position: relative;
+  top: 0.5em;
+  left: -0.1em;
+  font-size: 0.8em;
+}
+.cm-s-musje .cm-dur-underbar {
+  left: -0.1em;
+  font-size: 0.7em;
+}
+.cm-s-musje .cm-dot-center {
+  position: relative;
+  top: -0.15em;
+}
+.cm-s-musje .cm-slur {
+  position: relative;
+  top: -0.6em;
+  color: #eb6;
+  font-weight: bold;
+  font-size: 1em;
+}
+.cm-s-musje .cm-tie {
+  color: #eb6;
+  font-weight: bold;
+}
+.cm-s-musje .cm-lyric {
+  color: #a6e;
+}
+
+.cm-s-musje .cm-direction-up {
+  position: relative;
+  top: -0.5em;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: bold;
+  color: #3a3;
+}
+.cm-s-musje .cm-direction-down {
+  position: relative;
+  top: 0.5em;
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: bold;
+  color: #3b9;
+}
+
+.cm-s-musje .cm-bar {
+  background-color: #C1E2B3;
+  color: #3a3;
+  font-weight: bold
+}
+.cm-s-musje .cm-bar-heavy {
+  background-color: #C1E2B3;
+  color: #3a3;
+}
+
+.cm-s-musje .cm-comment {
+  font-style: italic;
+  color: #5ab;
+}
+
+.cm-s-musje .cm-error {
+  color: #d23;
+  background-color: #fce;
+}
